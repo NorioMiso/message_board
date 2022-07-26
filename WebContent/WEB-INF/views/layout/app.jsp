@@ -8,7 +8,7 @@
     <body>
         <div id="wrapper">
             <div id="header">
-                <h1>メッセージボードアプリ</h1>
+                <h1><a href="${pageContext.request.contextPath }/index">メッセージボード</a></h1>
             </div>
             <div id="content">
                 ${param.content }
