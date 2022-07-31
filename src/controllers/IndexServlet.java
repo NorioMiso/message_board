@@ -39,9 +39,7 @@ public class IndexServlet extends HttpServlet {
         int page = 1;
         try {
             page = Integer.parseInt(request.getParameter("page"));
-        } catch (NumberFormatException e) {
-            e.printStackTrace();
-        }
+        } catch (NumberFormatException e) { }
 
         List<Message> messages = em.createNamedQuery("getAllMessages", Message.class)
                                     .setFirstResult(15 * (page - 1))
